@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #a1c4fd, #c2e9fb); /* Light blue sky gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Weather component */
+.weather {
+    place-self: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #8ecae6, #00b4d8); /* Lighter blue gradient */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    min-height: 400px; /* Set a minimum height for the container */
+}
+
+/* Alert box styling */
+.alert {
+    padding: 10px;
+    background-color: #ffeb3b; /* Yellow background for alert */
+    color: #000;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Increased space below the alert */
+    display: none; /* Initially hidden */
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px; /* Space below the search bar */
+}
+
+.search-bar > input {
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #333; /* Darker text color for readability */
+    background-color: #e0f7fa; /* Light cyan for input background */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.search-bar > input:focus {
+    background-color: #b2ebf2; /* Change color on focus */
+}
+
+.search-bar > span {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer; /* Pointer cursor for interaction */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.search-bar > span:hover {
+    background-color: #b2ebf2; /* Light hover effect */
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Weather icon styling */
+.weather-icon {
+    width: 150px;
+    margin: 30px 0;
+}
+
+/* Temperature styling */
+.temperature {
+    color: #ffea00; /* Bright yellow for temperature */
+    font-size: 80px;
+    line-height: 1;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Location styling */
+.location {
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Weather data styling */
+.weather-data {
+    width: 100%;
+    margin-top: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    padding: 20px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Column styling */
+.col {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 22px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.col:hover {
+    color: #ff69b4; /* Pink on hover for a colorful effect */
+}
+
+.col > img {
+    width: 40px;
+}
+
+.col > div > span {
+    display: block;
+    font-size: 14px;
+    color: #e0e0e0; /* Light gray for subtext */
+}
